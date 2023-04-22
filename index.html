@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Alarme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="tela_digital">
+            <div class="campo">
+                <label>Hora atual:</label>
+                <input type="text" id="f_hora_atual" value="07:53 AM" disabled>
+            </div>
+
+            <div class="campo">
+                <label id="label_def">Defenir horário:</label>
+                
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <select id="f_formato">
+                        <option value="am">AM</option>
+                        <option value="pm">PM</option>
+                        <input type="time" id="f_hora_defenida">
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="botoes">
+            <button class="btn" id="btn_ativar">Ativar</button>
+            <button class="btn" id="btn_parar">Parar</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
